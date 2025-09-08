@@ -135,4 +135,7 @@ REST_FRAMEWORK = {
 
     # Ordenamiento global: ?ordering=campo | -campo
     'DEFAULT_FILTER_BACKENDS': ['rest_framework.filters.OrderingFilter'],
+    
+    'EXCEPTION_HANDLER': 'app.exceptions.custom_exception_handler',
+
 }
